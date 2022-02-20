@@ -28,11 +28,11 @@ class CrudController extends Controller
         
         DB::table('biodata')->insert([
             'idpeserta' => $request->idpeserta,
+            'image' => $request->idpeserta,
             'nama' => $request->nama,
             'jeniskelamin' => $request->jeniskelamin,
             'departemen' => $request->departemen,
             'notelp' => $request->notelp,
-            'Image' => $request->idbuku,
         ]);
 
         return redirect('/home');
@@ -45,7 +45,7 @@ class CrudController extends Controller
     }
 
     public function show($id){
-        $data = DB::table('biodata')->where('nama',$id)->get();
+        $data = DB::table('biodata')->where('idpeserta',$id)->get();
         return view('update',['biodata'=>$data]);
     }
 

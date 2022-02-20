@@ -26,8 +26,8 @@
             <td>{{ $b->jeniskelamin }}</td>
             <td>{{ $b->departemen }}</td>
             <td>{{ $b->notelp }}</td>
-            <td> <a href="/show/{{$b->nama }}"><button type="button" class="btn btn-warning btn">Edit</button></a> 
-            <a href="/hapus/{{$b->nama }}"><button type="button" class="btn btn-danger btn">Hapus</button> </a></td></td>
+            <td> <a href="/show/{{$b->idpeserta }}"><button type="button" class="btn btn-warning btn">Edit</button></a> 
+            <a href="/hapus/{{$b->idpeserta }}"><button type="button" class="btn btn-danger btn">Hapus</button> </a></td></td>
         </tr>
         @endforeach
 </table>
