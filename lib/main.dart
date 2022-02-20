@@ -37,7 +37,8 @@ class _MyHomePageState extends State<MyHomePage> {
       if (_text[0] == "Hello World!") {
         _text = ["Muhammad Dandhy Ardhyansyah",	
                   "Elizabeth",	
-                  "Rahadatul Aisy Putriani Helmi Haryanto",	
+                  "Rahadatul Aisy Putriani", 
+                  "Helmi Haryanto",	
                   "Egy Yuda Nugraha",	
                   "Rasiyah Shafa Azizah"];
       } else {
